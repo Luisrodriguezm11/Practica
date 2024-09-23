@@ -13,7 +13,8 @@ router.get('/api/customers/pagefiltersort', customers.pagingfilteringsorting);
 router.put('/api/customers/update/:id', customers.updateById);
 router.delete('/api/customers/delete/:id', customers.deleteById);
 
-module.exports = router;*/
+module.exports = router;
+
 
 let express = require('express');
 let router = express.Router();
@@ -25,4 +26,4 @@ router.get('/api/books/:id', books.getBookById);
 router.put('/api/books/update/:id', books.updateById);
 router.delete('/api/books/delete/:id', books.deleteById);
 
-module.exports = router;
+module.exports = router;*/

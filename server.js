@@ -58,8 +58,9 @@ db.sequelize.sync({force: true}).then(() => {
   console.log('Drop and Resync with { force: true }');
 }); 
 
-let router = require('./app/routers/router.js');
-let prestamoRouter = require('./app/routers/prestamo.router.js');
+//let router = require('./app/routers/router.js');
+//let prestamoRouter = require('./app/routers/prestamo.router.js');
+let studentRouter = require('./app/routers/student.router.js');
 
 const cors = require('cors');
 const corsOptions = {
@@ -69,11 +70,14 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
-app.use('/', router);
-app.use('/', prestamoRouter);
+// Registro de routers
+//app.use('/', router);
+//app.use('/', prestamoRouter);
+app.use('/', studentRouter);
+
 
 app.get("/", (req, res) => {
-  res.json({ mesage: "Bienvenido a la API de libros" });
+  res.json({ mesage: "Bienvenido a la API de estudiantes" });
 });
 
 const server = app.listen(8000, function () {
@@ -81,3 +85,4 @@ const server = app.listen(8000, function () {
   let port = server.address().port;
   console.log("App listening at http://%s:%s", host, port); 
 });
+

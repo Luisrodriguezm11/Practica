@@ -1,4 +1,4 @@
-module.exports = (sequelize, Sequelize) => {
+/*module.exports = (sequelize, Sequelize) => {
     const Prestamo = sequelize.define('prestamo', {  
       numeroPedido: {
         type: Sequelize.INTEGER,
@@ -24,4 +24,4 @@ module.exports = (sequelize, Sequelize) => {
   
     return Prestamo;
   };
-  
+  */

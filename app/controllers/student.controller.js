@@ -1,4 +1,6 @@
-const Student = require('../models/estudiante.model'); // Asegúrate de ajustar la ruta según tu estructura de proyecto
+const db = require('../config/db.config.js');
+const Student = db.Student;
+
 
 // Crear un nuevo estudiante
 exports.create = (req, res) => {
@@ -22,3 +24,9 @@ exports.create = (req, res) => {
         });
     }
 }
+
+exports.create = (req, res) => {
+    console.log("Solicitud POST recibida en /api/students/create");
+    // resto del código
+};
+

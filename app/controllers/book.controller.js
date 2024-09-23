@@ -1,4 +1,4 @@
-const db = require('../config/db.config.js');
+/*const db = require('../config/db.config.js');
 const Book = db.Book;
 
 // Crear un nuevo libro
@@ -119,3 +119,4 @@ exports.deleteById = async (req, res) => {
         });
     }
 }
+*/
